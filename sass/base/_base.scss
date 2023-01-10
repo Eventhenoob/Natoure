@@ -1,0 +1,33 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  image-rendering: optimizeSpeed;
+}
+
+html {
+  font-size: 62.5%;
+  @include respond(1420) {
+    font-size: 58%;
+  }
+
+  @include respond(1350) {
+    font-size: 55%;
+  }
+
+  @include respond(600) {
+    font-size: 46%;
+  }
+}
+
+body {
+  padding: 3rem;
+  @include respond(1350) {
+    padding: 2rem;
+  }
+  @include respond(1300) {
+    padding: 0rem;
+  }
+}
